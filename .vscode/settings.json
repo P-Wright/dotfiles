@@ -35,5 +35,6 @@
             "after": ["<Esc>"]
         }
     ],
-    "vim.easymotion": true
+    "vim.easymotion": true,
+    "editor.renderWhitespace": "boundary"
 }
