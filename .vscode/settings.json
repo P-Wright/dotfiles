@@ -14,7 +14,13 @@
             "before": ["Z", "Z"],
             "commands": [
                 ":wq"
-            ]
+            ],
+        },
+        {
+            "before": [" "],
+            "after": [
+                "leader", "leader", "leader", "b", "d", "w"
+            ],
         },
         {
             "before": ["Z", "Q"],
@@ -28,5 +34,6 @@
             "before": ["k", "j"],
             "after": ["<Esc>"]
         }
-    ]
+    ],
+    "vim.easymotion": true
 }
