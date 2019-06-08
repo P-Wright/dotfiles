@@ -1,0 +1,32 @@
+{
+    "editor.lineNumbers": "relative",
+    "vim.statusBarColorControl": true,
+    "vim.useSystemClipboard": true,
+    "vim.disableExtension": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["g", "b"],
+          "commands": ["workbench.action.showAllEditors"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Z", "Z"],
+            "commands": [
+                ":wq"
+            ]
+        },
+        {
+            "before": ["Z", "Q"],
+            "commands": [
+                ":q"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
+}
