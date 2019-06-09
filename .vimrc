@@ -24,7 +24,7 @@ command! -nargs=1 NewPost call NewPost("<args>")
 fun! NewPost(args)
     let l:file = "$BLOG/_posts/" . strftime("%Y-%m-%d") . "-" . tolower(substitute(a:args, " ", "-", "g")) . ".markdown"
     exe "e!" . l:file
-    put ='---'
+
     put ='date: '''.strftime("%Y-%m-%d H:M:S").''''
     put ='layout: post'
     put ='slug: '.l:file
@@ -33,4 +33,12 @@ fun! NewPost(args)
     put ='- blog'
     put ='---'
 endfun
+" Copy to X CLIPBOARD
+map <leader>cc :w !xsel -i -b<CR>
+map <leader>cp :w !xsel -i -p<CR>
+map <leader>cs :w !xsel -i -s<CR>
+" Paste from X CLIPBOARD
+map <leader>pp :r!xsel -p<CR>
+map <leader>ps :r!xsel -s<CR>
+map <leader>pb :r!xsel -b<CR>
 
