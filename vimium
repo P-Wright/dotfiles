@@ -1,5 +1,11 @@
-# Insert your preferred key mappings here.
+Insert your preferred key mappings here.
 map gb Vomnibar.activateTabSelection
 map :e Vomnibar.activateInNewTab
 map :q removeTab
 map ZQ removeTab
+map <c-d> scrollPageDown
+map <c-u> scrollPageUp
+unmap j
+unmap k
+map <c-f> scrollFullPageDown
+map <c-b> scrollFullPageUp
