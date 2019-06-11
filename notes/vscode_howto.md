@@ -7,6 +7,7 @@
 
 ## Vim mode
 - Can you fold markdown?
+- CTRL-O/I seem unreliable, is there a work-around or alternative?
 
 ## Tags
 - What are the vi commands that can be used to navigate using language tags?
