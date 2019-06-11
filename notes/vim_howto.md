@@ -11,3 +11,5 @@
 - How do you search/replace a selection?
 - Is there a quicker key command than :noh?
 - search for word under cursor?
+- How does find work for searching across files?
+
