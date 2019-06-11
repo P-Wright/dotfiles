@@ -10,3 +10,4 @@
 - How do you search a selection?
 - How do you search/replace a selection?
 - Is there a quicker key command than :noh?
+- search for word under cursor?
