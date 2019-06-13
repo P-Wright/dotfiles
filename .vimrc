@@ -15,6 +15,8 @@ set timeoutlen=600
 set scrolloff=2
 set visualbell t_vb=".
 set wrap
+set path+=**
+set wildmenu
 inoremap kj <Esc>
 nnoremap gb :ls<CR>:b<Space>
 command! -nargs=1 Ngrep lvimgrep "<args>" $NOTES_DIR/**/*.md
@@ -41,4 +43,5 @@ map <leader>cs :w !xsel -i -s<CR>
 map <leader>pp :r!xsel -p<CR>
 map <leader>ps :r!xsel -s<CR>
 map <leader>pb :r!xsel -b<CR>
-
+autocmd InsertEnter * setlocal nocursorline
+autocmd VimEnter,InsertLeave * setlocal cursorline
