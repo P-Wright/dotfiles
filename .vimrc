@@ -43,5 +43,11 @@ map <leader>cs :w !xsel -i -s<CR>
 map <leader>pp :r!xsel -p<CR>
 map <leader>ps :r!xsel -s<CR>
 map <leader>pb :r!xsel -b<CR>
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+" Display all matching files when we tab complete
+set wildmenu
+
 autocmd InsertEnter * setlocal nocursorline
 autocmd VimEnter,InsertLeave * setlocal cursorline
