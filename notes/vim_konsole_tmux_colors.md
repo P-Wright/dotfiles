@@ -9,3 +9,4 @@
 - Get the Konsole solarized file and follow readme:
     - ```git clone https://github.com/phiggins/konsole-colors-solarized
     - Note that install is 'kde' and not 'kde4'
+    - Put it here; /.kde/share/apps/konsole/Solarized\ Dark.colorscheme
