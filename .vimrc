@@ -51,3 +51,5 @@ set wildmenu
 
 autocmd InsertEnter * setlocal nocursorline
 autocmd VimEnter,InsertLeave * setlocal cursorline
+" Enable md syntax formatting for .md file extension
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
