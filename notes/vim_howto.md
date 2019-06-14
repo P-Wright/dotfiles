@@ -17,3 +17,7 @@
   - put "set PATH+=**" .vimrc file along with "set wildwindow"
   - ```:file *fragment<tab>``` will bring up matches
   - Can also do ```:b *fragment<tab>``` to load just one of the buffers (files) that have previously been edited
+
+# Autocompletion
+  - Autocomplete a file path? 
+    - C-x C-f while over partial name
