@@ -51,5 +51,16 @@ set wildmenu
 
 autocmd InsertEnter * setlocal nocursorline
 autocmd VimEnter,InsertLeave * setlocal cursorline
+"setup solarized theme
+syntax enable
+set background=dark
+colorscheme solarized
 " Enable md syntax formatting for .md file extension
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+" Put vertical line a 80
+set colorcolumn=80
+" Enable indent folding for python files
+autocmd FileType python setlocal foldmethod=indent
+" Without next, blank lines would start new fold...
+autocmd FileType python setlocal foldignore=
+autocmd FileType python setlocal foldnestmax=2

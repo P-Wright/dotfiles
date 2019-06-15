@@ -14,3 +14,4 @@
 
 ## find supress permission denied errors
 find / -name txt 2>&1 | grep -v 'Permission denied'
+
