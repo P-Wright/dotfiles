@@ -6,4 +6,7 @@
     - uses pylint and pep8 for static analysis
     - looks like vim has to be built with python enabled in order to use the python plugin
     - on this centos7 install, vim --version shows +python and -python3 so maybe it will work?
-    -  
+# Debugging with ipython and ipdb
+    - install ipdb: conda install -c conda-forge ipdb
+        - without this you have to use pdb which doesnt have syntax highlighting, command completion etc...
+        - to set a breakpoint: ipdb.set_trace()

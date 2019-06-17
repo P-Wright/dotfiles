@@ -64,3 +64,16 @@ autocmd FileType python setlocal foldmethod=indent
 " Without next, blank lines would start new fold...
 autocmd FileType python setlocal foldignore=
 autocmd FileType python setlocal foldnestmax=2
+" PEP8 indents if python
+autocmd FileType python setlocal tabstop=4
+autocmd FileType python setlocal softtabstop=4
+autocmd FileType python setlocal shiftwidth=4
+autocmd FileType python setlocal textwidth=79
+autocmd FileType python setlocal expandtab
+autocmd FileType python setlocal autoindent
+autocmd FileType python setlocal fileformat=unix
+
+highlight BadWhitespace ctermbg=red guibg=red
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+autocmd FileType python set makeprg=pylint\ --reports=n\ --ignored-modules=pandas\ --output-format=parseable\ %:p
+autocmd FileType pythone set errorformat=%f:%l:\ %m
