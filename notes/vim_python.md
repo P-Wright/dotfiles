@@ -10,3 +10,8 @@
     - install ipdb: conda install -c conda-forge ipdb
         - without this you have to use pdb which doesnt have syntax highlighting, command completion etc...
         - to set a breakpoint: ipdb.set_trace()
+# Autopep8
+    - au FileType python setlocal formatprg=autopep8\ -
+    - Now when you select lines in python and hit gq (the default mapping unless you remapped it). It will filter the lines through autopep8 and writes the nicely formatted version in place.
+    - The setting above also make it work with vim objects and vim motions, so you could rerender a paragraph (well lines of python code with no blank line between) using gqap.
+    - To do the whole file you could do gggqG
