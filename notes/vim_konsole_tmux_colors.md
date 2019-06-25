@@ -1,5 +1,6 @@
 - Get the vim solarized file and follow readme:
     - ```git clone https://github.com/altercation/vim-colors-solarized.git```
+    - cp solarized.vim ~/.vim/colors/
     - In .vimrc
         ```
         "setup solarized theme
