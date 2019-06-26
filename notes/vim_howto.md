@@ -21,3 +21,5 @@
 # Autocompletion
   - Autocomplete a file path? 
     - C-x C-f while over partial name
+  - In command mode (:) how do you paste the current buffer path?
+    - Ctrl-R %
