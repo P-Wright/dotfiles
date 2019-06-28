@@ -10,6 +10,7 @@ set shiftwidth=4
 set smartcase
 set ruler
 set smartindent
+set hidden
 set tabstop=4
 set timeoutlen=600
 set scrolloff=2
