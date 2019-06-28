@@ -23,3 +23,14 @@
     - C-x C-f while over partial name
   - In command mode (:) how do you paste the current buffer path?
     - Ctrl-R %
+    
+# Map commands to other tmux panes to leader key
+- nnoremap <leader>c :silent !tmux send-keys -t 2 'clear' C-m <Enter> <bar> :redraw! <Enter>
+- nnoremap = normal mode, non-recursive, map
+- :silent prevents having to hit enter after command executes
+- C-m cuases return in the tmux window to execute the command
+- <Enter> is interpreted by vim as the end of the command
+- <bar> is special symbol allowing multiple vim commands to be chained
+- This commands cuases the screen to get messaged so either you have to hit C-l to redraw or add the explicit redraw command
+
+
