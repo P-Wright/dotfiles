@@ -78,3 +78,5 @@ highlight BadWhitespace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 autocmd FileType python set makeprg=pylint\ --reports=n\ --ignored-modules=pandas\ --output-format=parseable\ %:p
 autocmd FileType pythone set errorformat=%f:%l:\ %m
+" Remap leader to space
+let mapleader="\<Space>"
