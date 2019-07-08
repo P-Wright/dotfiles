@@ -36,14 +36,8 @@ fun! NewPost(args)
     put ='- blog'
     put ='---'
 endfun
-" Copy to X CLIPBOARD
-map <leader>cc :w !xsel -i -b<CR>
-map <leader>cp :w !xsel -i -p<CR>
-map <leader>cs :w !xsel -i -s<CR>
-" Paste from X CLIPBOARD
-map <leader>pp :r!xsel -p<CR>
-map <leader>ps :r!xsel -s<CR>
-map <leader>pb :r!xsel -b<CR>
+" Use sys clipboard as default (must use vimx after yum install vim-xll)
+set clipboard=unnamedplus
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
