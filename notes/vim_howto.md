@@ -17,6 +17,11 @@
   - put "set PATH+=**" .vimrc file along with "set wildwindow"
   - ```:file *fragment<tab>``` will bring up matches
   - Can also do ```:b *fragment<tab>``` to load just one of the buffers (files) that have previously been edited
+# Opening files
+- How to quickly open file in same dir as current file?
+  - :e %:h <tab> - will expand to the currently selected buffers directory
+  - % - current file path
+  - h 'head' of current file path
 
 # Autocompletion
   - Autocomplete a file path? 
