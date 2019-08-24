@@ -1,5 +1,16 @@
 # Navigation
 
+# Help
+- Important to understand:
+  - tags/bookmarks show up as green 'ins-completion' at the line they are defined
+  - 'links' to these bookmarks are blue and you can jump to the line where that
+     bookmark is defined with C-]
+  - ex. ins-completion
+  - help <text> TAB will open wildmenu with all bookmarks that contain text
+  - bookmark names do not contain spaces
+  - bookmarks will usually be defined for each key stroke combination, with a unique prefix for
+    the topic that uses the command, ex. insert mode keystrongs will have something like i_CTRL-X_CTRL-L
+
 # Editing
 - How do you quickly save while in insert mode?
 
@@ -24,10 +35,18 @@
   - h 'head' of current file path
 
 # Autocompletion
+  - General: in pop-window for matches
+    - C-N/C-P to go forward back
+    - C-y to select item under curster
   - Autocomplete a file path? 
     - C-x C-f while over partial name
+  - Autocomplete a keyword in the current file:
+    - C-x C-n
+  - Autocomplete a tag that is in current CTAGs database
+    - C-x C-]
   - In command mode (:) how do you paste the current buffer path?
     - Ctrl-R %
+   
     
 # Map commands to other tmux panes to leader key
 - nnoremap <leader>c :silent !tmux send-keys -t 2 'clear' C-m <Enter> <bar> :redraw! <Enter>
