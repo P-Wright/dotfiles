@@ -88,3 +88,7 @@ let mapleader="\<Space>"
 "endfunc
 "command! -nargs=1 Fblah call SearchBlah(<f-args>)
 
+"Map command to run clang-format
+"map <C-K> :pyf <path-to-this-file>/clang-format.py<cr>
+"imap <C-K> <c-o>:pyf <path-to-this-file>/clang-format.py<cr>
+
