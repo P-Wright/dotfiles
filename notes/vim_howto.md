@@ -37,7 +37,17 @@
 # Autocompletion
   - General: in pop-window for matches
     - C-N/C-P to go forward back
-    - C-y to select item under curster
+    - C-y to select item under cursor
+  - Autocomplete using multiple sources
+    - C-n will autocomplete using all the options specified with "set complete=.,w.b,u,t,i" (by default)
+      - . is current buffer
+      - w is all buffers in current window
+      - u are all unloaded buffers
+      - t are tags
+      - i are include files:  IN A BIG CODE BASE THIS WILL BE TOO SLOW and you will want to remove in vim.rc
+    - C-n is a good option for source code in most cases since it will cover local variables not 
+      yet in tag database and also tags
+      
   - Autocomplete a file path? 
     - C-x C-f while over partial name
   - Autocomplete a keyword in the current file:
