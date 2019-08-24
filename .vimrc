@@ -74,3 +74,17 @@ autocmd FileType python set makeprg=pylint\ --reports=n\ --ignored-modules=panda
 autocmd FileType pythone set errorformat=%f:%l:\ %m
 " Remap leader to space
 let mapleader="\<Space>"
+" Command to build Ctags database: file.txt should be relative to project root and 
+" one path (no leading slashes) per line to exclude
+" nnoremap <leader>t :!ctags -R --exclude=@<file.txt> <project_root_path> <CR>
+
+"Setup C-n autocomplete to not search include files by default as this can be SLOW
+"set complete=.,w,b,u,t
+
+"Quick command ":Fblah term" to search only search specific folders and put results in quickfix list
+"func! SearchBlah(term)
+"    let s:command = "grep -r --include \*.h --include \*.cpp --include \*.c . a:term . " <PROJECT_FOLDER_PATH>
+"    execute(s:command)
+"endfunc
+"command! -nargs=1 Fblah call SearchBlah(<f-args>)
+
