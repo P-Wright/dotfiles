@@ -18,6 +18,8 @@ set visualbell t_vb=".
 set wrap
 set path+=**
 set wildmenu
+" Setup options for hard-wrapping test with gq{motion} command
+set formatoptions=tcq
 inoremap kj <Esc>
 nnoremap gb :ls<CR>:b<Space>
 command! -nargs=1 Ngrep lvimgrep "<args>" $NOTES_DIR/**/*.md
