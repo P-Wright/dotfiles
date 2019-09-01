@@ -8,6 +8,7 @@ set number relativenumber
 set laststatus=2
 set shiftwidth=4
 set smartcase
+set econding=utf-8
 set ruler
 set smartindent
 set hidden
