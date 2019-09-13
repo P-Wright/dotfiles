@@ -1,4 +1,5 @@
 - From: [writing a custom fold expression](http://vimcasts.org/episodes/writing-a-custom-fold-expression/)
+- NOTE: add "filetype plugin on" to the .vimrc
 - mkdir -p ~/.vim/after/ftplugin/markdown
 - vim ~/.vim/after/ftplugin/markdown/folding.vim
 - Add this content:
