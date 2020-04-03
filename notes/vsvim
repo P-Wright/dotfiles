@@ -1,0 +1,11 @@
+()[https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.ColorThemesforVisualStudio]
+
+The above gets close but some are messed up - so have to apply the ones below on top...
+
+https://github.com/leddt/visualstudio-colors-solarized
+
+and cursor not correct so:
+https://stackoverflow.com/questions/7546214/how-to-change-color-of-vim-cursor-in-visual-studio-2010
+
+
+
