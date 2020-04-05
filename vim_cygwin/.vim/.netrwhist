@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/cygdrive/c/Users/pwright/tw/code/trkanalysis/entity_test'
+let g:netrw_dirhist_7='/cygdrive/c/Users/pwright/tw/code/sbaker/entity_test'
+let g:netrw_dirhist_6='/home/pwright'
+let g:netrw_dirhist_5='/cygdrive/c/Users/pwright/tw/code/fsi/threat'
+let g:netrw_dirhist_4='/home/pwright'
+let g:netrw_dirhist_3='/cygdrive/c/Users/pwright/tw/code/fsi/threat'
+let g:netrw_dirhist_2='/cygdrive/c/Users/pwright/tw/code/fsi'
+let g:netrw_dirhist_1='/cygdrive/c/Users/pwright/gdrive/notes'
