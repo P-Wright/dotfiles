@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='C:\Users\pwright\tw\code\sbaker\entity_test'
+let g:netrw_dirhist_3='C:\Users\pwright\tw\code\fsi_documentation\MCF_TDF_Templates'
+let g:netrw_dirhist_2='C:/Users/pwright/tw/code/fsi_documentation/MCF_TDF_Templates'
+let g:netrw_dirhist_1='C:/Users/pwright/tw/code/fsi_documentation'
+let g:netrw_dirhist_0='C:/Users/pwright/tw/code'
+let g:netrw_dirhist_9='C:\Users\pwright\tw'
+let g:netrw_dirhist_8='C:/Users/pwright/tw/code/fsi/threat'
+let g:netrw_dirhist_7='C:/Users/pwright/tw/code/fsi'
+let g:netrw_dirhist_6='C:/Users/pwright/tw/code'
+let g:netrw_dirhist_5='C:/Users/pwright/tw'
