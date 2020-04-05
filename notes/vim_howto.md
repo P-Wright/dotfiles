@@ -1,3 +1,8 @@
+# Setup
+- To remap CAPS LOCK on windows https://www.techrepublic.com/article/how-to-remap-the-caps-lock-key-and-avoid-future-frustration/
+  - download server 2003 resource kit
+  - C:\Program Files (x86)\Windows Resource Kits\Tools\RemapKeys
+
 # Navigation
 
 # Help
