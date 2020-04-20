@@ -7,5 +7,15 @@ https://github.com/leddt/visualstudio-colors-solarized
 and cursor not correct so:
 https://stackoverflow.com/questions/7546214/how-to-change-color-of-vim-cursor-in-visual-studio-2010
 
+Assign vsvim all keybindings (otherwise some common vim bindings were being intercepted by vs)
+Tools->Options>vsvim->keyboard select "handle all with vsvim"
 
+CTRL-R was n't working so had to do this :
+Tools -> Options
+Navigate to Environment -> Keyboard
+Put the rusor in the "Press Shortcut Key box"
+Hit CTRL+R
+This should populate the "Shortcut Currently used by" box with 3-4 entries. For each one of those entries
 
+Navigate to the command in the list box in the dialog
+Hit "Remove" for the key binding which has "Ctrl R"
