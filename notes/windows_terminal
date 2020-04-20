@@ -1,0 +1,19 @@
+- install solarized for windows terminal
+
+- for dark, the dash causes invisible chars to fix:
+New-item -type file -force $profile //creates a windows terminal profile
+run another instance of powershell as admin and type:
+Set-ExecutionPolicy RemoteSigned
+now, got back to original terminal...
+notepad $PROFILE
+and paste in **NOTE** see link below about due to bug in terminal have to select the param above the invisible one...
+Set-PSReadLineOption -Colors @{
+   "Operator" = [ConsoleColor]::Magenta;
+   "Parameter" = [ConsoleColor]::Magenta
+}
+
+From: https://stevenknox.net/tweaking-powershell-color-scheme-to-play-nice-with-the-new-windows-terminal/
+
+Setup Powerline 
+https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
+- Note that you have to go install the CascadiaCodePL from https://github.com/microsoft/cascadia-code/releases?WT.mc_id=-blog-scottha
