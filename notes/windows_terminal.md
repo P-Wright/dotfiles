@@ -33,6 +33,13 @@ From: https://stevenknox.net/tweaking-powershell-color-scheme-to-play-nice-with-
 - Do the initial Vim-Plug install (it is a powershell command)
 - Launch vim and do a Plug-Install to install your plugins
 
+# Powershell FZF
+- [see this link](https://medium.com/rkttu/make-your-powershell-7-truly-powerful-eb56b3fbe37f)
+- Install-Module PSFzf -Scope CurrentUser
+- Remove-PSReadlineKeyHandler 'Ctrl+r'
+- Remove-PSReadlineKeyHandler 'Ctrl+t'
+- Import-Module PSFzf
+(NOTE this only works the first time and is not persistant!!)
 
 # Powerline on Powershell term
 
