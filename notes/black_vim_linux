@@ -1,0 +1,20 @@
+- must have already installed python3
+- must already have vim-plug installed
+- yum install python-devel
+- yum install python3-devel
+- [follow instructions in this link to build vim with python3] (https://www.programmersought.com/article/6244238683/)
+  - but I has to use this config line:  
+  ```
+  ./configure --with-features=huge --with-python-config-dir=/usr/lib64/python2.7/config/ --with-python3-config-dir=/usr/lib64/python3.6/config-3.6m-x86_64-linux-gnu/ --enable-python3interp --enable-pythoninterp
+  ```
+- add this to bash.rc export PATH=/usr/local/bin:$PATH
+- add this to .vimrc to block syntastic plugin from checking python
+```
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }¬
+```
+- add this to .vimrc to install (I ran into problem with latest version and had to go to last release
+```
+Plug 'psf/black', {'tag':'19.10b0'}¬
+```
+- Do PlugInstall
+- to format code do :Black
