@@ -1,0 +1,10 @@
+- git clone https://github.com/llvm-mirror/clang.git
+- create a utility dir in your home dir and add to .bashrc to include it in your path
+- cp /clang/tools/clang-format/clang-format.py to ~/utility
+- Add this to your .vimrc if compiled with python3 (use pyf if you only have python2)
+
+"Map command to run clang-format¬                                                                                                                                                                                                                         1 map <C-K> :py3f /home/phil.wright/utility/clang-format.py<cr>¬
+  2 imap <C-K> <c-o>:py3f /home/phil.wright/utility/clang-format.py<cr>¬
+  
+ - select a block of test and do CNTRL-SHIFT-k to format
+ 
