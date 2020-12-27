@@ -1,4 +1,13 @@
+" Specify a directory for plugins
+call plug#begin('~/vimfiles/plugged')
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'nlknguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-unimpaired'
+call plug#end()
+
 set expandtab
+
 set incsearch
 set list
 "set listchars=tab:▸\ ,eol:¬
@@ -16,7 +25,7 @@ set tabstop=4
 set timeoutlen=600
 set scrolloff=2
 set visualbell t_vb=".
-set guifont=Source_Code_Pro:h10:cANSI:qDRAFT
+set guifont=Source_Code_Pro:h11:cANSI:qDRAFT
 set guioptions -=T
 set guioptions -=m
 set nowrap
@@ -73,7 +82,7 @@ autocmd VimEnter,InsertLeave * setlocal cursorline
 "setup solarized theme
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme gruvbox 
 " Enable filetype plugins
 filetype plugin on
 " Enable md syntax formatting for .md file extension
@@ -120,4 +129,17 @@ set tags=~/tw/code/fsi/tags;
 "Map command to run clang-format
 "map <C-K> :pyf <path-to-this-file>/clang-format.py<cr>
 "imap <C-K> <c-o>:pyf <path-to-this-file>/clang-format.py<cr>
-
+"
+nnoremap <leader>ni :e $NOTES/index.md<CR>:cd $NOTES<CR>
+" Make Ctrlp use ripgrep
+if executable('rg')
+    let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+    let g:ctrlp_user_caching = 0
+    set grepprg=rg\ --color=never\ --vimgrep
+" only searches markdown as well using ripgrep
+" Thus depends on grepprg being set to rg
+command! -nargs=1 Ngrep grep "<args>" -g "*.md" "c:\users\phil\Google Drive\notes"
+nnoremap <leader>fn :Ngrep
+command! Vlist botright vertical copen | vertical resize 50
+nnoremap <leader>v :Vlist<CR>
+endif
