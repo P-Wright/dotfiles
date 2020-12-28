@@ -1,0 +1,9 @@
+- install gvim
+- pull dotfiles repo 
+- copy vimrc from windows folder in repo to ~/vimfiles/vimrc on new system
+- Install [Jetbrains-Mono 'regular' font](https://www.jetbrains.com/lp/mono/)
+- Install [universal ctag](https://github.com/universal-ctags/ctags-win32/releases) and add to a folder in system path
+- Install [ripgrep](https://github.com/BurntSushi/ripgrep/releases) (choose the msvc windows executable) and also add to folder in system path
+- Create a environment variable NOTES that points to notes folder (google drive sync location)
+- edit any local paths in VIMR
+- Start gvim
