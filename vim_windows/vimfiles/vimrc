@@ -167,7 +167,7 @@ function! CtrlPOpenFunc(action, line)
   endif
 endfunction
 " turn off caching so new files show up without having to do a cache refresh
-g:ctrlp_use_caching = 0
+let g:ctrlp_use_caching=0
 " Register our custom Ctrl-P open function with the plugin
 let g:ctrlp_open_func = { 
          \ 'files': 'CtrlPOpenFunc',
