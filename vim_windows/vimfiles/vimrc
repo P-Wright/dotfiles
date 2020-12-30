@@ -10,8 +10,8 @@ set expandtab
 
 set incsearch
 set list
-"set listchars=tab:▸\ ,eol:¬
-set listchars=tab:��\ ,eol:�
+"set listchars=tab:â–¸\ ,eol:Â¬
+set listchars=tab:–¸\ ,eol:¬
 set nohlsearch
 set nojoinspaces
 set number relativenumber
@@ -166,6 +166,8 @@ function! CtrlPOpenFunc(action, line)
       call call('ctrlp#acceptfile', [a:action, a:line])
   endif
 endfunction
+" turn off caching so new files show up without having to do a cache refresh
+g:ctrlp_use_caching = 0
 " Register our custom Ctrl-P open function with the plugin
 let g:ctrlp_open_func = { 
          \ 'files': 'CtrlPOpenFunc',
