@@ -19,3 +19,14 @@ This should populate the "Shortcut Currently used by" box with 3-4 entries. For 
 
 Navigate to the command in the list box in the dialog
 Hit "Remove" for the key binding which has "Ctrl R"
+
+In VS2017, Ctrl-O and Ctrl-i not working between files, which is apparently a known issue fixed in later versions:
+Workaround:
+- To find which .vimrc VSVIM using: set vimrc?
+- copy this file from .vimrc to .vsvimrc
+- past in these lines:
+nmap <C-O> :vsc View.NavigateBackward<CR>
+nmap <C-I> :vsc View.NavigateForward<CR>
+vmap <C-o> :vsc View.NavigateBackward<CR>
+vmap <C-i> :vsc View.NavigateForward<CR>
+- 
